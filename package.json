@@ -1,0 +1,28 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "project authentication with express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilhamarifinsamsul/authentication-express.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilhamarifinsamsul/authentication-express.js/issues"
+  },
+  "homepage": "https://github.com/ilhamarifinsamsul/authentication-express.js#readme",
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.13.0"
+  }
+}
