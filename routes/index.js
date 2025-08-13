@@ -14,10 +14,13 @@ const registerController = require("../controllers/RegisterController");
 const loginController = require("../controllers/LoginController");
 
 // import users controller
-const usersController = require("../controllers/UserController");
+const userController = require("../controllers/UserController");
 
 // import validate register
 const { validateRegister, validateLogin } = require("../utils/validators/auth");
+
+// import validate users
+const { validateUser } = require("../utils/validators/user");
 
 // define routes for register
 router.post("/register", validateRegister, registerController.register);
@@ -26,7 +29,15 @@ router.post("/register", validateRegister, registerController.register);
 router.post("/login", validateLogin, loginController.login);
 
 // define routes for get users
-router.get("/admin/users", verifyToken, usersController.findusers);
+router.get("/admin/users", verifyToken, userController.findusers);
+
+// define routes create users
+router.post(
+  "/admin/users",
+  verifyToken,
+  validateUser,
+  userController.createUser
+);
 
 // export routes
 module.exports = router;
