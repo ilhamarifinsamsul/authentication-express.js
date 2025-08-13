@@ -18,12 +18,14 @@
   "homepage": "https://github.com/ilhamarifinsamsul/authentication-express.js#readme",
   "dependencies": {
     "@prisma/client": "^5.13.0",
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-validator": "^7.2.1",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "validator": "^13.15.15"
   },
   "devDependencies": {
     "prisma": "^5.13.0"
